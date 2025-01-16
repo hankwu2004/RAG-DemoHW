@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main container */
+#chat-container {
+    width: 400px;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Messages container */
+#messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9fafc;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Individual messages */
+.user-message, .ai-message {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+/* User message styling */
+.user-message {
+    background-color: #d1e7ff;
+    color: #004085;
+    align-self: flex-end;
+    border: 1px solid #bee5eb;
+}
+
+/* AI message styling */
+.ai-message {
+    background-color: #d4edda;
+    color: #155724;
+    align-self: flex-start;
+    border: 1px solid #c3e6cb;
+}
+
+/* Error message styling */
+#error_message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Input section */
+#input-section {
+    display: flex;
+    padding: 10px;
+    background: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+
+/* Input field */
+#user_input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#user_input:focus {
+    border-color: #007bff;
+}
+
+/* Submit button */
+#submit_btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit_btn:hover {
+    background-color: #0056b3;
+}
